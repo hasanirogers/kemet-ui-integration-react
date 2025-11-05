@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 
-import 'kemet-ui/dist/components/kemet-button/kemet-button'
-import 'kemet-ui/dist/components/kemet-drawer/kemet-drawer'
-import 'kemet-ui/dist/components/kemet-icon/kemet-icon'
+import 'kemet-ui/elements/button'
+import 'kemet-ui/elements/drawer'
+import 'kemet-ui/elements/icon-bootstrap'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,14 +18,14 @@ function App() {
       <aside slot="navigation">
         <br />
         <button onClick={() => setIsDrawerOpened(false)}>
-          <kemet-icon icon="x-lg" size={24}></kemet-icon>
+          <kemet-icon-bootstrap icon="x-lg" size={24}></kemet-icon-bootstrap>
         </button>
         <br /><br />
         <nav>[Your nav here]</nav>
       </aside>
       <section slot="content">
         <button onClick={() => setIsDrawerOpened(true)}>
-          <kemet-icon icon="list" size={24}></kemet-icon>
+          <kemet-icon-bootstrap icon="list" size={24}></kemet-icon-bootstrap>
         </button>
         <br /><br />
         <div> 
